@@ -1,0 +1,37 @@
+:host {
+  min-height: 100vh;
+
+  display: flex;
+
+  font-family: OpenSans;
+  font-size: 14px;
+  color: #444;
+}
+
+.sidebar {
+  flex: 1 1 30%;
+  max-width: 280px;
+
+  background-color: #222;
+  color: white;
+}
+
+.main {
+  padding: 2em;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+h1 {
+  text-align: center;
+
+  text-decoration: underline;
+  text-decoration-thickness: 0.2em;
+  text-decoration-color: rebeccapurple;
+}
+
+.contact-info {
+  text-align: center;
+}

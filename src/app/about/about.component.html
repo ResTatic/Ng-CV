@@ -1,0 +1,22 @@
+<img src="/assets/profile-picture.png" alt="profile picture" />
+<div class="content">
+  <section class="topic">
+    <h2>About Me</h2>
+    <p *ngFor="let item of aboutMeItems">{{item}}</p>
+  </section>
+
+  <section class="topic">
+    <h2>Skills</h2>
+    <div class="skills">
+      <ng-container *ngFor="let skill of skills">
+        <div>{{skill.name}}</div>
+        <div class="skills__skillBar" [style.width.%]="skill.percentage"></div>
+      </ng-container>
+    </div>
+  </section>
+
+  <section class="topic">
+    <p *ngFor="let link of links">{{link.description ? link.description + ': ' : ''}}<a
+      [href]="link.target">{{link.displayName}}</a></p>
+  </section>
+</div>

@@ -1,0 +1,26 @@
+.content {
+  padding: 1em;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.topic {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: max-content 80px;
+  align-items: center;
+  row-gap: 0.5em;
+  column-gap: 2em;
+
+  &__skillBar {
+    height: 30%;
+    background: #888;
+  }
+}
