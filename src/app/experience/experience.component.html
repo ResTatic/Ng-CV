@@ -1,7 +1,7 @@
 <section class="topic">
-  <h2>Work Experience</h2>
+  <h2>Berufserfahrung</h2>
   <section *ngFor="let exp of workExperience">
-    <h3>{{exp.title}}, {{exp.company}} ({{exp.end ? exp.start + ' - ' + exp.end : 'since ' + exp.start}})</h3>
+    <h3>{{exp.title}}, {{exp.company}} ({{exp.end ? exp.start + ' - ' + exp.end : 'seit ' + exp.start}})</h3>
     <ul>
       <li *ngFor="let item of exp.descriptionItems">{{item}}</li>
     </ul>
@@ -9,7 +9,7 @@
 </section>
 
 <section class="topic">
-  <h2>Education</h2>
+  <h2>Studium</h2>
   <section *ngFor="let edu of education">
     <h3>{{edu.title}}, {{edu.school}} ({{edu.graduationDate}})</h3>
     <p>{{edu.description}}</p>
